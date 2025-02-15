@@ -5,4 +5,7 @@ export class AppService {
   getHello(): string {
     return 'Hello World!';
   }
+  create(body?: any): string {
+    return `your email is ${body.email} and your name is ${body.name}`;
+  }
 }
