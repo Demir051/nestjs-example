@@ -6,6 +6,6 @@ export class AppService {
     return 'Hello World!';
   }
   create(body?: any): string {
-    return `your email is ${body.email} and your name is ${body.name}`;
+    return `Successfully created a new entity with the following data: ${JSON.stringify(body)}`;
   }
 }
