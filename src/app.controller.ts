@@ -9,9 +9,4 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
-
-  @Post("create")
-  create(@Body() body: any ): string {
-    return this.appService.create(body);
-  }
 }
