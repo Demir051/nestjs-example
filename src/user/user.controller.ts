@@ -9,7 +9,7 @@ export class UserController {
 
     @Get()
     activeUsers() {
-        return this.userService.activeUsers();
+        return "Active Users";
     }
 
     @Post("create")
