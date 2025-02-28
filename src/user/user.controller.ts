@@ -13,7 +13,7 @@ export class UserController {
     @ApiOperation({ summary: 'Get all users' })
     @ApiResponse({ status: 200, description: 'Return all users' })
     activeUsers() {
-        return "Active Users";
+        return this.userService.activeUsers();
     }
 
     @Post("create")
@@ -39,4 +39,5 @@ export class UserController {
     delete(@Param('id') id: string) {
         return this.userService.deleteUser(id);
     }
+    
 }
